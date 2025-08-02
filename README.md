@@ -36,8 +36,7 @@ This task was completed as part of the *Prodigy Infotech Web Development Interns
 ## 🌐 Live Demo
 
 Check out the live version here:  
-👉 [task02prodigy.netlify.app]
-
+👉 [task02prodigy.netlify.app](https://task02prodigy.netlify.app) 
 
 
 
