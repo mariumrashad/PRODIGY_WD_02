@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Stopwatch</h1>
+
+  <div class="stopwatch" aria-label="Stopwatch timer">
+    <div class="time-section" aria-live="polite" aria-atomic="true">
+      <div id="minutes" class="digits">00</div>
+      <div class="label">Minutes</div>
+    </div>
+    <div class="colon" aria-hidden="true">:</div>
+    <div class="time-section" aria-live="polite" aria-atomic="true">
+      <div id="seconds" class="digits">00</div>
+      <div class="label">Seconds</div>
+    </div>
+    <div class="colon" aria-hidden="true">:</div>
+    <div class="time-section" aria-live="polite" aria-atomic="true">
+      <div id="centiseconds" class="digits">00</div>
+      <div class="label">Centiseconds</div>
+    </div>
+  </div>
+
+  <div class="buttons" role="group" aria-label="Stopwatch controls">
+    <button id="startStopBtn" type="button" aria-pressed="false" aria-label="Start stopwatch">Start</button>
+    <button id="lapBtn" type="button" disabled aria-label="Record lap time">Lap</button>
+    <button id="resetBtn" type="button" aria-label="Reset stopwatch and clear laps" disabled>Reset</button>
+  </div>
+
+  <div class="laps-container" aria-live="polite" aria-label="Lap times" aria-relevant="additions">
+    <div class="laps-header">Lap Times</div>
+    <ul id="lapsList" class="laps-list"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
